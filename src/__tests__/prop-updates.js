@@ -5,7 +5,7 @@ import {render, fireEvent} from 'react-testing-library'
 import {FavoriteNumber} from '../favorite-number'
 
 test('entering an invalid value shows an error message', () => {
-  const {getByLabelText, getByTestId, queryByTestId, debug, rerender} = render(
+  const {getByLabelText, getByTestId, queryByTestId, rerender} = render(
     <FavoriteNumber />,
   )
   const input = getByLabelText('Favorite Number')
